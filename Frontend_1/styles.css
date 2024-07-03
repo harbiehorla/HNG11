@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
 header {
@@ -13,21 +15,20 @@ header {
     color: white;
     padding: 1rem;
     width: 100%;
-    text-align: center;
 }
 
 .profile {
     margin: 2rem 0;
-    text-align: center;
 }
 
 .profile img {
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
 .time-info, .goals, .links {
     margin: 1rem 0;
-    text-align: center;
 }
 
 .links a {
@@ -39,4 +40,45 @@ header {
 
 .links a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .profile, .time-info, .goals, .links {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    main {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile, .time-info, .goals, .links {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profile, .time-info, .goals, .links {
+        width: 50%;
+    }
 }
