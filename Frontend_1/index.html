@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 data-testid="slackDisplayName">Glitch</h1>
+    </header>
+
+    <section class="profile">
+        <img src="profile.jpeg" alt="Slack Profile Picture" data-testid="slackProfilePicture" width="512" height="512">
+        <p data-testid="slackEmail">harbiehorla@gmail.com</p>
+    </section>
+
+    <section class="time-info">
+        <p data-testid="currentTimeUTC">Current Time in UTC: <span id="utcTime"></span></p>
+        <p data-testid="currentDay">Current Day: <span id="currentDay"></span></p>
+    </section>
+
+    <section class="goals">
+        <h2>My Tech Goals for the Next 2 Years</h2>
+        <ul>
+            <li>Master ReactJS and build dynamic web applications.</li>
+            <li>Learn backend development with Node.js and Express.</li>
+            <li>Contribute to open-source projects.</li>
+            <li>Build a personal project portfolio.</li>
+        </ul>
+    </section>
+
+    <section class="links">
+        <a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a>
+        <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+        <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
