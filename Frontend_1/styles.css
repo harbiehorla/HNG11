@@ -8,6 +8,7 @@ body {
     align-items: center;
     background-color: #f4f4f4;
     text-align: center;
+    overflow-x: hidden;
 }
 
 header {
@@ -15,6 +16,17 @@ header {
     color: white;
     padding: 1rem;
     width: 100%;
+    text-align: center;
+}
+
+/* Main content container */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .profile {
@@ -22,7 +34,6 @@ header {
 }
 
 .profile img {
-    border-radius: 50%;
     max-width: 100%;
     height: auto;
 }
@@ -42,6 +53,10 @@ header {
     text-decoration: underline;
 }
 
+ul {
+    text-align: left;
+}
+
 /* Responsive Styles */
 @media (min-width: 600px) {
     .profile, .time-info, .goals, .links {
@@ -51,25 +66,8 @@ header {
 }
 
 @media (min-width: 768px) {
-    body {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-
     main {
         margin-top: 3rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .profile, .time-info, .goals, .links {
